@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whack-a-Mole Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Whack-a-Mole Game</h1>
+
+  <!-- 遊戲區域 -->
+  <div class="game-board">
+    <div class="hole" id="hole1">
+      <img src="hole.png" class="hole-image" alt="Hole">
+      <img src="mole.png" class="mole hidden" alt="Mole">
+    </div>
+    <div class="hole" id="hole2">
+      <img src="hole.png" class="hole-image" alt="Hole">
+      <img src="mole.png" class="mole hidden" alt="Mole">
+    </div>
+    <div class="hole" id="hole3">
+      <img src="hole.png" class="hole-image" alt="Hole">
+      <img src="mole.png" class="mole hidden" alt="Mole">
+    </div>
+    <div class="hole" id="hole4">
+      <img src="hole.png" class="hole-image" alt="Hole">
+      <img src="mole.png" class="mole hidden" alt="Mole">
+    </div>
+    <div class="hole" id="hole5">
+      <img src="hole.png" class="hole-image" alt="Hole">
+      <img src="mole.png" class="mole hidden" alt="Mole">
+    </div>
+    <div class="hole" id="hole6">
+      <img src="hole.png" class="hole-image" alt="Hole">
+      <img src="mole.png" class="mole hidden" alt="Mole">
+    </div>
+    <div class="hole" id="hole7">
+      <img src="hole.png" class="hole-image" alt="Hole">
+      <img src="mole.png" class="mole hidden" alt="Mole">
+    </div>
+    <div class="hole" id="hole8">
+      <img src="hole.png" class="hole-image" alt="Hole">
+      <img src="mole.png" class="mole hidden" alt="Mole">
+    </div>
+    <div class="hole" id="hole9">
+      <img src="hole.png" class="hole-image" alt="Hole">
+      <img src="mole.png" class="mole hidden" alt="Mole">
+    </div>
+  </div>
+
+  <!-- 顯示分數和時間 -->
+  <div class="info">
+    <p>Score: <span id="score">0</span></p>
+    <p>Time Left: <span id="time-left">30</span> seconds</p>
+    <button id="start-btn">Start Game</button>
+  </div>
+
+  <!-- 音效 -->
+  <audio id="hit-sound" src="hit-sound.mp3"></audio>
+  <audio id="miss-sound" src="miss-sound.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

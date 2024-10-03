@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    color: #fff;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .hole {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .hole-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .mole {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .info {
+    margin-top: 20px;
+    color: #fff;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
